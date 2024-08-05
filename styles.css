@@ -190,7 +190,7 @@ nav .menu-btn {
         height: 200vh;
     }
     .sorchemain{
-        font-size: 69px;
+        font-size: 48px;
     }
 }
 @media screen and (max-width: 660px){
@@ -205,7 +205,7 @@ nav .menu-btn {
 @media screen and (max-width: 600px){
     .welcomesection{
         padding: 40px;
-        height: 250vh;
+        height: 300vh;
     }
     .vedio {
         width: 400px;
@@ -228,7 +228,12 @@ nav .menu-btn {
         text-align: start;
     }
     .welcomesection{
-        height: 420vh;
+        height: 310vh;
+        padding: 20px;
+    }
+    .fishermantextnext{
+        font-size: 16px;
+        line-height: 25px;
     }
 }
 /* ---------------------------- */
@@ -322,6 +327,7 @@ nav .menu-btn {
     }
     .aboutusheading{
         margin: 0;
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 700px){
@@ -354,6 +360,17 @@ nav .menu-btn {
 }
 @media screen and (max-width: 500px){
     .aboutus{
-        height: 550vh;
+        height: 400vh;
+    }
+    .aboutustext{
+        margin-top: 20px;
+        line-height: 30px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    .aboutus{
+        padding: 20px;
     }
 }
