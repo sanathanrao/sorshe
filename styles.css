@@ -120,7 +120,7 @@ nav .menu-btn {
 /* ------------------- */
 .welcomesection{
   padding: 80px;
-  height: 130vh;
+  height: 190vh;
   background-image: url('images/yellowpaper.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ nav .menu-btn {
 }
 .sorchemain{
     font-family: "Syne", sans-serif;
-    font-size: 108px;
+    font-size: 70px;
     text-align: center;
 }
 .vediowelcome{
@@ -234,22 +234,22 @@ nav .menu-btn {
 /* ---------------------------- */
 .aboutus{
     padding: 60px;
-    height: 130vh;
+    height: 190vh;
     background-image: url('images/redwide.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .spoon{
-    width: 80px;
+    width: 50px;
 }
 .aboutusheading{
     font-family: "Syne", sans-serif;
     color: #feeb61;
-    font-size: 70px;
+    font-size: 50px;
     align-items: baseline;
-    margin-top: 155px;
     margin-left: 20px;
+    margin-top: 90px;
 }
 .abhoads{
     display: flex;
@@ -270,11 +270,13 @@ nav .menu-btn {
 .onegstrail{
     width: 600px;
     height: 700px;
+    margin-top: 110px;
 }
 .alldaenpic{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 .dance{
     position: relative;
@@ -284,7 +286,7 @@ nav .menu-btn {
     position: relative;
     top: 100px;
 }
-@media screen and (max-width: 1460px){
+@media screen and (max-width: 1060px){
  .butterabot{
     flex-direction: column;   
  }
