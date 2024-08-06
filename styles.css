@@ -238,7 +238,7 @@ nav .menu-btn {
 /* ---------------------------- */
 .aboutus{
     padding: 60px;
-    height: 150vh;
+    /* height: 150vh; */
     background-image: url('images/redwide.jpg');
     background-position: center;
     background-repeat: no-repeat;
