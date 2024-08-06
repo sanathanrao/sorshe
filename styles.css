@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
 
 * {
     margin: 0;
@@ -493,5 +495,126 @@ background: url('images/redwide.jpg');
     }
     .user-name{
         margin-bottom: 20px;
+    }
+}
+/* ------------------------------------- */
+.footersection{
+    padding: 60px;
+    width: 100%;
+    background-image: url('images/redwide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerlogo{
+    width: 400px;
+}
+.leftsmot{
+    margin-left: 100px;
+}
+.newsletter{
+    color: #feeb61;
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.email{
+    color: #feeb61;
+    font-size: 24px;
+}
+.emailsection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.emailsection input{
+    width: 400px;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #FFFF00;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+input:focus {
+    outline: none;
+}
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+/* ------------ */
+@media screen and (max-width: 1200px){
+ .footersection{
+    flex-direction: column;
+ }
+ .leftsmot{
+    margin-left: 0;
+    margin-top: 20px;
+ }
+}
+@media screen and (max-width: 600px){
+    .footersection{
+        padding: 30px;
+    }
+    .footerlogo{
+        width: 300px;
+    }
+    .emailsection input{
+        width: 300px;
     }
 }
