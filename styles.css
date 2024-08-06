@@ -616,6 +616,11 @@ input:focus {
     }
     .emailsection input{
         width: 300px;
+        margin-top: 0px;
+    }
+    .newsletter{
+        width: 100%;
+        font-size: 22px;
     }
 }
 /* ------------------------- */
