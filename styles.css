@@ -276,7 +276,19 @@ nav .menu-btn {
 }
 .dance{
     margin-right: 40px;
+    margin-top: 20px;
+
 }
+@media screen and (max-width: 1260px){
+    .rotate{
+        bottom: 0;
+    }
+    .drinkjuice{
+        margin-left: 0;
+    }
+}
+
+
 @media screen and (max-width: 1060px){
  .butterabot{
     flex-direction: column;   
