@@ -483,6 +483,7 @@ background: url('images/redwide.jpg');
 @media (max-width: 600px){
     .card-list .card-item {
         display: block;
+        padding: 20px;
     }
     .cardtext{
        margin-left: 0;
