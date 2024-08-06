@@ -282,6 +282,7 @@ nav .menu-btn {
     margin-top: 20px;
 }
 .dance{
+    width: 290px;
     position: relative;
     top: 80px;
 }
@@ -347,24 +348,18 @@ nav .menu-btn {
     }
 }
 @media screen and (max-width: 550px){
-    .onegstrail{
-        width: 300px;
-        height: 400px;
-    }
-    .drinkjuice{
-        width: 300px;
+    .onegstrail , .drinkjuice{
+        width: 290px;
         height: 400px;
     }
 }
 @media screen and (max-width: 500px){
-    .aboutus{
-        /* height: 400vh; */
-    }
     .aboutustext{
         margin-top: 20px;
         line-height: 30px;
         font-size: 16px;
         line-height: 25px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px){
