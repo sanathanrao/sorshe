@@ -423,7 +423,7 @@ background: url('images/redwide.jpg');
 }
 
 .card-list .card-item .user-profession {
-    font-size: 1.15rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: 20px;
@@ -493,6 +493,5 @@ background: url('images/redwide.jpg');
     }
     .user-name{
         margin-bottom: 20px;
-        font-size: 22px;
     }
 }
