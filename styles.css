@@ -471,6 +471,9 @@ background: url('images/redwide.jpg');
     border-radius: 50%;
     font-weight: bold;
 }
+.stevente{
+    display: block;
+}
 
 @media (max-width: 768px) {
     .slider-wrapper {
@@ -487,5 +490,9 @@ background: url('images/redwide.jpg');
     }
     .cardtext{
        margin-left: 0;
+    }
+    .user-name{
+        margin-bottom: 20px;
+        font-size: 22px;
     }
 }
