@@ -131,24 +131,31 @@ nav .menu-btn {
   display: flex;
   margin-top: -5px;
 }
-
+.authe{
+    color: #b00505;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    font-family: "Space Grotesk", sans-serif;
+}
 .welcto{
     color: #b00505;
     font-size: 22px;
     letter-spacing: 5px;
-    text-align: center;
+    margin-left: 180px;
     font-family: "Space Grotesk", sans-serif;
 }
 .sorchemain{
     font-family: "Syne", sans-serif;
     font-size: 70px;
-    text-align: center;
+    margin-left: 70px;
 }
 .vediowelcome{
     margin-left: 200px;
 }
 .vedio{
-    border-radius: 20px;
+    margin-right: 60px;
+    margin-top: 65px;
 }
 .fishermantextnext{
     font-family: "Space Grotesk", sans-serif;
@@ -156,8 +163,8 @@ nav .menu-btn {
     color: #000;
     margin-top: 30px;
     font-weight: 500;
-    width: 80%;
-    line-height: 28px;
+    width: 85%;
+    line-height: 27px;
 }
 
 @media screen and (max-width: 1520px){
@@ -177,6 +184,13 @@ nav .menu-btn {
     }
 }
 @media screen and (max-width: 1120px){
+    .welcto, .authe, .sorchemain{
+        text-align: center;
+        margin-left: 0;
+    }
+    .fishermantextnext{
+        width: 100%;
+    }
     .sorchemain{
         width: 100%;
         font-size: 89px;
