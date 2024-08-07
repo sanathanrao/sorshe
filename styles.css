@@ -641,6 +641,11 @@ input:focus {
         font-size: 22px;
     }
 }
+@media screen and (max-width: 400px) {
+    .footerlogo {
+        width: 200px;
+    }
+}
 /* ------------------------- */
 .menuimg{
     width: 100%;
