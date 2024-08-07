@@ -16,7 +16,8 @@ body {
 
 nav {
     font-family: "Varela Round", sans-serif;
-    background: #b00505;
+    background: url('images/redwide.jpg');
+    /* background: #b00505; */
     height: 120px;
     width: 100%;
     display: flex;
@@ -45,8 +46,8 @@ nav .nav-links ul li a,
 nav .social-icons ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
-    padding: 8px 3px;
+    font-size: 20px;
+    /* padding: 8px 3px; */
     transition: background 0.3s, color 0.3s;
 }
 .home{
@@ -128,6 +129,7 @@ nav .menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  margin-top: -5px;
 }
 
 .welcto{
@@ -154,6 +156,8 @@ nav .menu-btn {
     color: #000;
     margin-top: 30px;
     font-weight: 500;
+    width: 80%;
+    line-height: 28px;
 }
 
 @media screen and (max-width: 1520px){
@@ -252,7 +256,7 @@ nav .menu-btn {
     font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
     margin-top: 30px;
-    line-height: 30px;
+    line-height: 29px;
     width: 85%;
 }
 .butterabot{
@@ -525,6 +529,7 @@ background: url('images/redwide.jpg');
 .email{
     color: #feeb61;
     font-size: 24px;
+    font-family: "Varela Round", sans-serif;
 }
 .emailsection{
     margin-top: 30px;
