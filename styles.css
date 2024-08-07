@@ -15,41 +15,16 @@ body {
     width: auto;
 }
 
-nav {
-    font-family: "Varela Round", sans-serif;
+nav{
+    background: #efedf0;
     background: url('images/redwide.jpg');
-    /* background: #b00505; */
     height: 120px;
     width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    padding: 0 20px;
-}
-
-nav .logo img {
-    height: 100px;
-}
-
-nav .nav-links ul,
-nav .social-icons ul {
-    display: flex;
-    list-style: none;
     align-items: center;
-}
-
-nav .nav-links ul li,
-nav .social-icons ul li {
-    margin: 0 15px;
-}
-
-nav .nav-links ul li a,
-nav .social-icons ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    /* padding: 8px 3px; */
-    transition: background 0.3s, color 0.3s;
+    font-family: "Varela Round", sans-serif;
 }
 .home{
     color: #FFFF00;
@@ -57,68 +32,154 @@ nav .social-icons ul li a {
     text-underline-offset: 0.4em;
 }
 
-nav .nav-links ul li a:hover,
-nav .social-icons ul li a:hover {
+.wrlin:hover{
     border-radius: 5px;
+    color: #FFFF00;
+}
+
+.logo{
+    line-height: 80px;
+    margin: 10px 0 0 30px;
+    width: 110px;
+}
+.logo img{
+    margin-top: 10px;
+    width: 110px;
+}
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.nav ul li a:hover{
     color: #FFFF00;
     text-decoration: underline;
     text-underline-offset: 0.4em;
 }
-
-nav .menu-btn {
-    display: none;
-    color: white;
-    font-size: 30px;
+.checkbtn{
+    font-size: 20px;
+    color: var(--maincolor);
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
     cursor: pointer;
+    display: none;
+}
+.fas{
+    background: #ffb20b;
+    color: #fff;
+    padding: 15px;
+    border-radius: 100%;
+}
+#check{
+    display: none;
 }
 
-.fa-bars:before{
-    padding: 20px;
+
+.nav ul li a:hover{
+    color: #FFFF00;
 }
+.nav ul li a:after{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: var(--leafcolor);
+    transition: 0.3s all;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+.nav ul li a:hover:after{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+/* ---------- */
 
-@media (max-width: 1000px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
     }
-
-    nav .logo {
-        margin-bottom: 10px;
+    nav ul li a{
+        font-size: 16px;
     }
-
-    nav .nav-links ul,
-    nav .social-icons ul {
-        flex-direction: column;
-        width: 100%;
+}
+@media (max-width: 1000px){
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+      position: fixed;
+      width: 40%;
+      border-radius:  0  0  0 50px;
+      background: var(--maincolor);
+      top: 100px;
+      left: 100%;
+      transition: 0.5s all;
+      background: url('images/redwide.jpg');
+      margin-top: 20px;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: var(--leafcolor);
+    }
+    #check:checked ~ ul{
+        position: absolute;
+        left: 60%;
+        box-shadow: 0 4px 2px 2px rgba(0,0,0,.2);
+        background: url('images/redwide.jpg');
+        margin-top: 20px;
+        z-index: 1;
+    }
+    .sociallinks{
         display: none;
     }
-
-    nav .nav-links ul li,
-    nav .social-icons ul li {
-        margin: 10px 0;
+}
+@media screen and (max-width: 450px){
+    #check:checked ~ ul{
+        left: 40%;
+        background: url('images/redwide.jpg');
+        z-index: 1;
     }
-
-    nav .nav-links ul {
-        margin-bottom: 20px;
-    }
-
-    nav .nav-links ul li a,
-    nav .social-icons ul li a {
-        font-size: 24px;
-        padding: 15px;
-    }
-
-    nav .menu-btn {
-        display: block;
-        position: absolute;
-        /* top: 15px; */
-        right: 20px;
-    }
-
-    #click:checked + .menu-btn + .nav-links ul,
-    #click:checked + .menu-btn + .nav-links + .social-icons ul {
-        display: flex;
+    ul{
+        width: 60%;
     }
 }
 /* ------------------- */
