@@ -388,6 +388,7 @@ nav .menu-btn {
     min-height: 100vh;
     background: url('images/yellowpaper.jpg')  center ;
     font-family: "Varela Round", sans-serif;
+    margin-top: -5px;
 }
 
 .slider-wrapper{
