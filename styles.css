@@ -87,6 +87,7 @@ nav{
 .logo{
     line-height: 80px;
     width: 110px;
+    margin-left: 20px;
 }
 .logo img{
     margin-top: 10px;
