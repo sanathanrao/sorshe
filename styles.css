@@ -6,6 +6,50 @@
 
 
 /* -------animate------------ */
+.slide-in-text {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-text.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Delay classes */
+.delay-1.visible {
+    transition-delay: 0s; /* No delay */
+}
+
+.delay-2.visible {
+    transition-delay: 0.4s; /* 0.4 seconds delay */
+}
+
+.delay-3.visible {
+    transition-delay: 0.8s; /* 0.8 seconds delay */
+}
+.delay-4.visible {
+    transition-delay: 1s; /* 0.12 seconds delay */
+}
+.delay-5.visible {
+    transition-delay: 1.3s; /* 0.16 seconds delay */
+}
+.delay-6.visible {
+    transition-delay: 1.6s; /* 0.16 seconds delay */
+}
+.delay-7.visible {
+    transition-delay: 1.9s; /* 0.16 seconds delay */
+}
+.delay-8.visible {
+    transition-delay: 2.2s; /* 0.16 seconds delay */
+}
+.delay-9.visible {
+    transition-delay: 2.5s; /* 0.16 seconds delay */
+}
+.delay-10.visible {
+    transition-delay: 2.8s; /* 0.16 seconds delay */
+}
 
 * {
     margin: 0;
