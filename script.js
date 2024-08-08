@@ -1,30 +1,22 @@
-const swiper = new Swiper('.slider-wrapper', {
-
-    loop: true,
-    grabCursor: true,
-    spaceBetween : 30,
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('.fade-in');
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets : true,
-
-    },
+  function checkVisibility() {
+      const viewportHeight = window.innerHeight;
+      
+      elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const isVisible = elementTop < viewportHeight * 0.8;
+          
+          if (isVisible) {
+              element.classList.add('visible');
+          }
+      });
+  }
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  window.addEventListener('scroll', checkVisibility);
+  window.addEventListener('resize', checkVisibility);
+  checkVisibility(); // Initial check
+});
 
-    breakpoints: {
-        0: {
-        slidesPerView: 1
-        },
-        1060: {
-        slidesPerView: 2
-        }
-    }
-  
-  });
+
