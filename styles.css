@@ -764,7 +764,7 @@ input:focus {
 }
 @media screen and (max-width: 600px){
     .footersection{
-        padding: 30px;
+        padding: 20px;
     }
     .footerlogo{
         width: 300px;
