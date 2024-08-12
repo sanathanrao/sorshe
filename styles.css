@@ -654,7 +654,7 @@ background: url('images/redwide.jpg');
 }
 /* ------------------------------------- */
 .footersection{
-    padding: 60px;
+    padding: 40px;
     width: 100%;
     background-image: url('images/redwide.jpg');
     background-position: center;
@@ -665,7 +665,7 @@ background: url('images/redwide.jpg');
     justify-content: space-evenly;
 }
 .footerlogo{
-    width: 400px;
+    width: 250px;
 }
 .leftsmot{
     margin-left: 100px;
@@ -673,8 +673,8 @@ background: url('images/redwide.jpg');
 .newsletter{
     color: #feeb61;
     font-family: "Poppins", sans-serif;
-    width: 80%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 25px;
     word-spacing: 5px;
 }
 .email{
@@ -689,7 +689,6 @@ background: url('images/redwide.jpg');
 }
 .emailsection input{
     width: 400px;
-    margin-top: 20px;
     background: transparent;
     border: none;
     border-bottom: 3px solid #FFFF00;
