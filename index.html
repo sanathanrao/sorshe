@@ -237,15 +237,16 @@
        <div class="leftsmot">
          <h1 class="newsletter slide-in-text delay-2">SUBSCRIBE TO OUR NEWSLETTER FOR UPDATES & SPECIAL OFFERS</h1>
 
-         <form>
+         <form method="post" name="submit-to-google-sheet">
            <div class="emailsection">
              <label class="email" for="email">Email*</label>
              <input  type="email" id="email" name="email">
-             
+             <span class="msg" id="msg"></span>
            </div>
 
-         <button type="button" class="button-50" role="button">Submit</button>
+         <button type="submit" class="button-50" role="button">Submit</button>
         </form>
+        <!-- <span id="msg"></span> -->
        </div>
 
      </div>
@@ -263,6 +264,24 @@
 });
     </script>
 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzT1R5juCISeZTY5V3alPiZvFxvqpQn1VbC8_3vf1T5eTmsYqUXRAVcU9KlyrosHw_Z/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Thank you For subscribing!"
+        setTimeout(function(){
+           msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 </body>
 </html>

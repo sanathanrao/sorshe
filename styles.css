@@ -699,6 +699,12 @@ background: url('images/redwide.jpg');
 input:focus {
     outline: none;
 }
+.msg{
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
 
 /* CSS */
 .button-50 {
@@ -726,7 +732,7 @@ input:focus {
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .button-50:focus {
