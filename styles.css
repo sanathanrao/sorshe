@@ -570,8 +570,8 @@ nav ul li a{
     font-family: "Varela Round", sans-serif;
 }
 
-@media screen and (max-width: 800px){
-  .threepic{
+@media screen and (max-width: 900px){
+  .menufipbook{
     display: none;
   }
 }
