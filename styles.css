@@ -748,7 +748,6 @@ nav ul li a{
     .flip-book{
         position: relative;
         top: 30px;
-        left: 35px;
     }
     div#p1.flip{
         height: 400px;
