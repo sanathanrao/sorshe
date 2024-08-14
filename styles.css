@@ -660,20 +660,24 @@ nav ul li a{
 	background: url(images/qqweed.png);
 }
 .next-btn{
+    font-size: 40px;
 	position: absolute;
-	bottom: 13px;
+	bottom: 3px;
 	right: 13px;
 	cursor: pointer;
 	color: #fff;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 	
 }
 .back-btn{
+    font-size: 40px;
 	position: absolute;
-	bottom: 13px;
-	right: 13px;
+	bottom: 0px;
+	left: 13px;
 	cursor: pointer;
 	color: #fff;
+    transform: rotate(-180deg);
 }
 #p1{
 	z-index: 3;
