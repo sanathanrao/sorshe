@@ -736,12 +736,19 @@ nav ul li a{
 
 @media screen and (max-width: 500px){
   #cover{
-     height: 300px;
+     height: 400px;
+     position: relative;
+     top: 40px;
   }
 }
 @media screen and (max-width: 500px){
     .menuflipingds{
         padding-top: 0;
+    }
+    .flip-book{
+        position: relative;
+        top: 30px;
+        left: 35px;
     }
     div#p1.flip{
         height: 400px;
