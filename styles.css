@@ -737,6 +737,12 @@ nav ul li a{
     .back{
         background: url(images/aseeriogjd.png)
     }
+    .next-btn{
+        font-size: 20px;
+    }
+    .back-btn{
+        font-size: 20px;
+    } 
 }
 
 
