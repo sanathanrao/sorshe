@@ -723,6 +723,9 @@ nav ul li a{
       width: 200px;
       height: 300px;
     }
+    .menuflipingds{
+        height: 60vh;
+    }
 }
 
 @media screen and (max-width: 1000px){
