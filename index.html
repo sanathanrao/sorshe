@@ -213,206 +213,67 @@
 </div> -->
 <!-- ----------------------------------------------------------- -->
      
-    <style type="text/css">
-      .books{
-         padding: 20px;
-      }
-      .thumbnail {
-appearance: none;
-background-color: #000000;
-border: 2px solid #1A1A1A;
-border-radius: 15px;
-box-sizing: border-box;
-color: #FFFFFF;
-cursor: pointer;
-display: inline-block;
-font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-font-size: 16px;
-font-weight: 600;
-line-height: normal;
-margin: 0;
-min-height: 60px;
-min-width: 0;
-outline: none;
-padding: 16px 24px;
-text-align: center;
-text-decoration: none;
-transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-width: 100%;
-will-change: transform;
-}
+<style type="text/css">
+  body {
+    background: url(images/redwide.jpg);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    height: 70vh;
+    width: 80%;
+    margin: 20px auto;
+    /* border: 2px solid red;
+    box-shadow: 0 0 5px red; */
+  }
+  .fullscreen {
+    background-color: #333;
+  }
+</style>
 
-    .thumbnail:disabled {
-      pointer-events: none;
-   }
+<!-- <div class="container" id="container1">
 
-       .thumbnail:hover {
-         box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-         transform: translateY(-2px);
-     }
+</div> -->
 
-      .thumbnail:active { 
-        box-shadow: none;
-        transform: translateY(0);
-     }
- 
-      /* .thumbnail {
-        display: inline-block;
-        margin: 0 5px;
-        cursor: pointer;
-        color: red;
-        background: yellow;
-        padding: 30px;
-        border-radius: 20px;
-      } */
-      .fullscreen {
-        background-color: #333;
-      }
-      div.mount-container{
-        width: 100%;
-        height: 100vh;
-      }
-      .fa-times:before{
-       display: none;
-      }
+<div class="container" id="container2">
 
-      @media screen and (max-width: 500px){
-        div.mount-container{
-        width: 100%;
-        height: 55vh;
-      }
-       .books{
-        padding-bottom: 0px;
-       }
-      }
+</div>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/html2canvas.min.js"></script>
+<script src="js/three.min.js"></script>
+<script src="js/pdf.min.js"></script>
+<script src="js/3dflipbook.min.js"></script>
 
-    </style>
+<script type="text/javascript">
 
-    <div class="books">
-      <div class="thumbnail" data-book-id="book1">
-         Open Menu Book ▼
-      </div>
-      <!-- <div class="thumbnail" data-book-id="book2">
-        Book 2
-      </div> -->
-      <!-- <div class="thumbnail" data-book-id="book3">
-        Book 3
-      </div> -->
-    </div>
+  var template = {
+    html: 'templates/default-book-view.html',
+    links: [{
+      rel: 'stylesheet',
+      href: 'css/font-awesome.min.css'
+    }],
+    styles: [
+      'css/short-black-book-view.css'
+    ],
+    script: 'js/default-book-view.js'
+  };
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/html2canvas.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/pdf.min.js"></script>
-    <script src="js/3dflipbook.min.js"></script>
-    <script src="js/lightbox.js"></script>
+  // Book 1 {
+  // $('#container1').FlipBook({
+  //   pdf: 'books/pdf/FoxitPdfSdk.pdf',
+  //   template: template
+  // });
+  // }
 
-    <script type="text/javascript">
-      window.jQuery(function() {
-        var $ = window.jQuery;
-        var styleClb = function() {
-          $('.fb3d-modal').removeClass('light').addClass('dark');
-        }, booksOptions = {
-          book1: {
-            pdf: 'books/pdf/CondoLiving.pdf',
-            template: {
-              html: 'templates/default-book-view.html',
-              styles: [
-                'css/short-white-book-view.css'
-              ],
-              links: [{
-                rel: 'stylesheet',
-                href: 'css/font-awesome.min.css'
-              }],
-              script: 'js/default-book-view.js',
-              sounds: {
-                startFlip: 'sounds/start-flip.mp3',
-                endFlip: 'sounds/end-flip.mp3'
-              }
-            },
-            styleClb: styleClb
-          },
-          book2: {
-            pdf: 'books/pdf/TheThreeMusketeers.pdf',
-            propertiesCallback: function(props) {
-              props.page.depth /= 4;
-              props.cover.padding = 0.002;
-              return props;
-            },
-            template: {
-              html: 'templates/default-book-view.html',
-              styles: [
-                'css/black-book-view.css'
-              ],
-              links: [{
-                rel: 'stylesheet',
-                href: 'css/font-awesome.min.css'
-              }],
-              script: 'js/default-book-view.js',
-              sounds: {
-                startFlip: 'sounds/start-flip.mp3',
-                endFlip: 'sounds/end-flip.mp3'
-              }
-            },
-            styleClb: function() {
-              $('.fb3d-modal').removeClass('dark').addClass('light');
-            }
-          },
-          book3: {
-            pdf: 'books/pdf/FoxitPdfSdk.pdf',
-            propertiesCallback: function(props) {
-              props.page.depth /= 3;
-              return props;
-            },
-            template: {
-              html: 'templates/default-book-view.html',
-              styles: [
-                'css/black-book-view.css'
-              ],
-              links: [{
-                rel: 'stylesheet',
-                href: 'css/font-awesome.min.css'
-              }],
-              script: 'js/default-book-view.js',
-              sounds: {
-                startFlip: 'sounds/start-flip.mp3',
-                endFlip: 'sounds/end-flip.mp3'
-              }
-            },
-            styleClb: styleClb
-          }
-        };
+  // Book 2 {
+  $('#container2').FlipBook({
+    pdf: 'books/pdf/CondoLiving.pdf',
+    template: template
+  });
+  // }
 
-        var instance = {
-          scene: undefined,
-          options: undefined,
-          node: $('.fb3d-modal .mount-container')
-        };
-
-        var modal = $('.fb3d-modal');
-        modal.on('fb3d.modal.hide', function() {
-          instance.scene.dispose();
-        });
-        modal.on('fb3d.modal.show', function() {
-          instance.scene = instance.node.FlipBook(instance.options);
-          instance.options.styleClb();
-        });
-        $('.books').find('.thumbnail').click(function(e) {
-          var target = $(e.target);
-          while(target[0] && !target.attr('data-book-id')) {
-            target = $(target[0].parentNode);
-          }
-          if(target[0]) {
-            instance.options = booksOptions[target.attr('data-book-id')];
-            $('.fb3d-modal').fb3dModal('show');
-          }
-        });
-      });
-    </script>
+</script>
 
 
 

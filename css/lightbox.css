@@ -37,6 +37,7 @@ body::before {
   opacity: 0;
   transition: opacity 0.5s, z-index 0.5s step-end;
 }
+div.fb3d-modal.visible
 
 .fb3d-modal.visible {
   z-index: 11;
@@ -59,6 +60,7 @@ body::before {
 
 .fb3d-modal.dark::before {
   background-color: #000;
+  display: block;
 }
 
 .fb3d-modal .cmd-close {

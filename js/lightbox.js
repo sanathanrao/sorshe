@@ -48,7 +48,7 @@
       }
       function fb3dModalHide() {
         if(this.hasClass('visible')) {
-          $('body').removeClass('fb3d-modal-shadow');
+          $('body').addClass('fb3d-modal-shadow');
           this.removeClass('visible');
           fb3d.activeModal = undefined;
           this.trigger('fb3d.modal.hide');
