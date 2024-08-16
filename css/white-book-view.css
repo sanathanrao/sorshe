@@ -134,6 +134,9 @@
   margin: 0 auto;
   opacity: 0.3;
   transition: opacity 2s ease-in-out 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-book .controls .fnavbar:hover {
@@ -218,6 +221,7 @@
 .ctrl .fnavbar .fnav .dropup .menu {
   bottom: 100%;
   box-shadow: 3px 0 3px #ddd;
+  right: 0 !important;
 }
 .ctrl .fnavbar .fnav .dropup .caret {
   display: inline-block;
@@ -271,6 +275,7 @@
   padding: 0 10px;
   display: inline-block;
   font-size: 0;
+  display: none;
 }
 
 .ctrl .pages .number, .ctrl .pages .amount {
