@@ -1,8 +1,5 @@
 /*Lightbox Effect*/
 
-.fb3d-modal-shadow {
-
-}
 
 body::before {
   position: fixed;
