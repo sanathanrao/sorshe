@@ -19,7 +19,7 @@ const galleryStyleSheet = `
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem;
+	// padding: 1rem;
 	z-index: 2;
 	position: relative;
 }
