@@ -353,6 +353,12 @@ const galleryStyleSheet = `
    .gallery-popup.active + .gallery-overlay{
      background: none;
    }
+   .gallery-popup .prev {
+     display: none;  
+   }	 
+   .gallery-popup .next {
+	 display:none; 
+    }
     
 } 
 
