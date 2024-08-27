@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// ------------------------------gallery wrapper--------------------------------
 
 
 
