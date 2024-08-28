@@ -13,6 +13,7 @@ const galleryStyleSheet = `
 
 .gallery-wrapper .gallery-img img {
 	cursor: pointer;
+	margin-bottom: -5px;
 }
 
 .gallery-wrapper {
