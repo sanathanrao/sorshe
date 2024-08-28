@@ -911,7 +911,7 @@ background: url('images/redwide.jpg');
     background-size: cover;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .footerlogo{
     width: 200px;
@@ -921,7 +921,7 @@ background: url('images/redwide.jpg');
 }
 .newsletter{
     color: #feeb61;
-    font-family: "Poppins", sans-serif;
+    font-family: "Varela Round", sans-serif;
     width: 100%;
     font-size: 25px;
     word-spacing: 5px;
@@ -957,6 +957,7 @@ input:focus {
 
 /* CSS */
 .button-50 {
+  font-family: "Varela Round", sans-serif;
   appearance: button;
   background-color: #000;
   background-image: none;
@@ -967,7 +968,6 @@ input:focus {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1014,7 +1014,7 @@ input:focus {
  }
  .leftsmot{
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 10px;
  }
 }
 @media screen and (max-width: 600px){
