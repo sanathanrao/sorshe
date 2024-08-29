@@ -65,7 +65,7 @@ body {
 nav{
     background: #efedf0;
     background: url('images/redwide.jpg');
-    height: 120px;
+    height: 100px;
     width: 100%;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     display: flex;
@@ -232,6 +232,7 @@ nav ul li a{
 /* --------------------- */
 .smid{
     width: 100%;
+    height: 540px;
 }
 
 /* ------------------- */
