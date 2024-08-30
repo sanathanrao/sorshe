@@ -239,6 +239,26 @@ nav ul li a{
      height: 550px;
 
 }
+@media screen and (max-width: 2150px){
+    .smid{
+       height: 1000px;
+    }
+}
+@media screen and (max-width: 1850px){
+    .smid{
+       height: 800px;
+    }
+}
+@media screen and (max-width: 1550px){
+    .smid{
+       height: 600px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .smid{
+       height: 560px;
+    }
+}
 @media screen and (max-width: 600px){
     .smid{
        height: 400px;
