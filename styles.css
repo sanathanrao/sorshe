@@ -230,14 +230,25 @@ nav ul li a{
     }
 }
 /* --------------------- */
-
+.popening{
+    width: 100%
+}
 .smid{
     width: 100%; 
-    height: 88vh;
       /* Center and scale the image nicely */
+     height: 550px;
 
 }
-
+@media screen and (max-width: 600px){
+    .smid{
+       height: 400px;
+    }
+}
+@media screen and (max-width: 450px){
+    .smid{
+       height: 260px;
+    }
+}
 /* ------------------- */
 .welcomesection{
   padding: 80px;
