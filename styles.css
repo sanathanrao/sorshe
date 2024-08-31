@@ -423,6 +423,11 @@ nav ul li a{
 /* ------------------------------- */
 .wstow{
     margin-top: 25px;
+    width: 320px;
+    height: 568px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 3px;
 }
 /* ---------------------------- */
 .aboutus{
@@ -464,6 +469,7 @@ nav ul li a{
     width: 400px;
     height: 500px;
     margin-top: 110px;
+    border-radius: 3px;
 }
 .alldaenpic{
     display: flex;
@@ -473,14 +479,18 @@ nav ul li a{
 .drinkjuice{
     margin-top: 40px;
     margin-left: 40px;
+    border-radius: 3px;
 }
 .rotate{
     position: relative;
     bottom: 80px;
+    border-radius: 3px;
 }
 .dance{
     margin-right: 40px;
     margin-top: 20px;
+    border-radius: 3px;
+
 
 }
 @media screen and (max-width: 1260px){
