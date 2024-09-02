@@ -65,9 +65,11 @@ const galleryStyleSheet = `
 }
 
 .gallery-popup img {
-	width: 400px;
-	max-height: 100%;
-	object-fit: contain;
+	width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    object-fit: contain;
+}
 }
 
 .gallery-popup .close {
