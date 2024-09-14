@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<div class="image-row">
+    <a href="page1.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 1" class="menu-image">
+    </a>
+    <a href="page2.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 2" class="menu-image">
+    </a>
+    <a href="page3.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 3" class="menu-image">
+    </a>
+    <a href="page4.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDrg8riFmyr6VcFEGQGQ8fFVJR6h2Uc2Caw&s" alt="Image 4" class="menu-image">
+    </a>
+    <a href="page5.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHNySrABC-doiIPaDWAiXrkjJaX1_FBvNhg&s" alt="Image 5" class="menu-image">
+    </a>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    body {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+/* .om-wayr{
+    display: flex;
+    text-align: center;
+    align-items: center;
+} */
+.faq-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+.stat{
+    margin: 15px;
+}
+.faq-image:hover {
+    transform: scale(1.1);
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 5px;
+}
+
+.faq-question {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 600;
+
+    align-items: center;
+    display: flex;
+    
+}
+
+.faq-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px ;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    background: #f9fafb;
+}
+.price{
+    font-weight: 500;
+    color: green;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.pritwo{
+    color: red;
+}
+
+.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+/* Style for the image row */
+.image-row {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 20px auto;
+    max-width: 1200px;
+    overflow-x: hidden; /* Default overflow behavior */
+}
+
+/* Style for each image */
+.menu-image {
+    width: 18%; /* Adjust width for 5 images in a row */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Make the row scrollable on smaller screens */
+@media (max-width: 768px) {
+    .image-row {
+        overflow-x: auto; /* Allow horizontal scroll */
+        flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+    }
+
+    .menu-image {
+        width: 40%; /* Increase image width for easier scrolling */
+    }
+}
+
+</style>
+
+<body>
+    <div class="faq-container">
+        <h2 class="stat">MAIN COURSE</h2>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Shukto</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">🟢 An Evergreen preparation from grandma's kitchen, consists mixed vegetables including bitter gourd cooked to a smooth finish.
+                jhinge aloo posto. <Span class="price">  ₹ 399</Span></div>
+            <div></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Jhinge Aloo Posto</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">🟢 Ridge Gourd and potato cooked in a thick gravy made out of poppy seeds.
+                <Span class="price">  ₹ 499</Span></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Chholar dal (with jhuri bhaja).</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">🟢 Chana Dal cooked in ghee with chunk of coconut, served with grated crispy fried potato. .<Span class="price">  ₹ 499</Span></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+              <div class="ita">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Machher Matha diye dal (with jhuri bhaja).</div>
+              </div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">🔴 Moong Dal cooked with fish head that will make the bengali taste buds nostalgic. served with crispy fried potato.<Span class="price pritwo">  ₹ 499</Span></div>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const image = item.querySelector('.faq-image');
+        const faqHeader = item.querySelector('.faq-header');
+        const answer = item.querySelector('.faq-answer');
+        const arrow = item.querySelector('.faq-arrow');
+
+        faqHeader.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+
+        // Also allow image click to open/close the answer
+        image.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+});
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+</html>

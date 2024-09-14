@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Based FAQ with Arrows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    body {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+.om-wayr{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.faq-image {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.faq-image:hover {
+    transform: scale(1.1);
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.faq-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+}
+
+.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+</style>
+
+<body>
+    <div class="faq-container">
+        <h2>STARTER</h2>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">Fish batter Fry.</div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">FILLET OF FISH DIPPED IN BATTER AND FRIED TO A JUICY INSIDE, CRISPY OUTSIDE FINISH.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">FISH FRY.</div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">FILLET OF FISH MARINATED IN AROMATIC SPICES AND FRIED IN A CRUNSCHY COATING.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">FISH FINGER.</div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">STRIP OF FISH MARINATED IN AROMATIC SPICES AND FRIED IN CRUNCHY COATING.CHICKEN CUTLET.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">CHICKEN CUTLET.</div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">MINCED CHICKEN MARINATED IN AROMATIC SPICES AND SHALLOW FRIED TO PERFECTION.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header om-wayr">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTk0mkeknyuA_E-W8nWun8m0RcpY0RWzmjng&s" alt="FAQ 1" class="faq-image">
+                <div class="faq-question">CHICKEN PAKODA.</div>
+                <div class="faq-arrow">&#9662;</div> <!-- Down Arrow Unicode -->
+            </div>
+            <div class="faq-answer">CHICKEN PIECES WITH BONE MARINATED IN SPECIAL SPICES AND FRIED TO PERFECTION.</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const image = item.querySelector('.faq-image');
+        const faqHeader = item.querySelector('.faq-header');
+        const answer = item.querySelector('.faq-answer');
+        const arrow = item.querySelector('.faq-arrow');
+
+        faqHeader.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+
+        // Also allow image click to open/close the answer
+        image.addEventListener('click', () => {
+            const isVisible = answer.style.display === 'block';
+
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            document.querySelectorAll('.faq-arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+
+            // Toggle the clicked answer and rotate the arrow
+            if (isVisible) {
+                answer.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+});
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+</html>

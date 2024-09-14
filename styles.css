@@ -470,6 +470,7 @@ nav ul li a{
     height: 500px;
     margin-top: 110px;
     border-radius: 3px;
+    /* object-fit: cover; */
 }
 .alldaenpic{
     display: flex;
@@ -571,6 +572,76 @@ nav ul li a{
         padding: 20px;
     }
 }
+/* ------------------------------------/ */
+.menunewupdate{
+    font-family: "Syne", sans-serif;
+    font-size: 50px;
+    align-items: baseline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    text-align: center;
+}
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+/* --------------- */
+.image-row {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;   
+}
+.sta{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px;
+}
+.ita{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.image-row  img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;  
+    margin: 10px;
+}
+/* Style for each image */
+.menu-image {
+    width: 50%; /* Adjusts width for 5 images to fit the row */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
 /* ---------------------------------- */
 .menufipbook{
     display: grid;
